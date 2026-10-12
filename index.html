@@ -4,33 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page Psicólogos</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#">Nome/Logo</a>
-        <a href="#">Início</a>
-        <a href="#">Serviços</a>
-        <a href="#">Horários</a>
-        <a href="#">Feedbacks</a>
-        <a href="#">Contato</a>
-      </nav>
+      <div class="cabecalho">
+        <nav class="menu">
+            <a href="#" class="logo">Nome/Logo</a>
+
+            <div class="menu2">
+              <a href="#p1">Início</a>
+              <a href="#p2">Serviços</a>
+              <a href="#p3">Horários</a>
+              <a href="#p4">Feedbacks</a>
+              <a href="#p5">Contato</a>
+            </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div class="p1">
-        <h4>Consultório de psicologia e psicoterapia</h4>
-        <h2>Lorem Ipsum</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <button>AGENDAR</button>
-        <button>SAIBA MAIS</button>
-        <img src="img3.png" alt="dnadnd" width="50%" height="50%" />
-      </div>
+      <div class="p1" id="p1">
+  <!-- Lado Esquerdo: Conteúdo de Texto -->
+  <div class="p1-texto">
+    <h4>Consultório de psicologia e psicoterapia</h4>
+    <h2>Lorem Ipsum.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <div class="p1-butoes">
+      <button class="btn-agendar">AGENDAR</button>
+      <button class="btn-saiba">SAIBA MAIS</button>
+    </div>
+  </div>
 
-      <div class="p2">
+  <!-- Lado Direito: Container da Imagem com as Curvas -->
+  <div class="p1-imagem-container">
+    <!-- Imagem de fundo principal (Mulher no consultório) -->
+    <img src="img3.png" alt="Psicóloga em atendimento" class="img-principal" />
+    
+    <!-- Camadas das curvas (SVG ou PNG transparente) -->
+    <img src="curva-tras.png" alt="" class="curva curva-tras" />
+    <img src="curva-frente.png" alt="" class="curva curva-frente" />
+  </div>
+</div>
+
+      <div class="p2" id="p2">
         <div class="titulop2">
           <h2>Nossos Serviços</h2>
           <h6>Qualidades que trazem toda diferença para o paciente</h6>
@@ -40,7 +60,7 @@
         </div>
       </div>
 
-      <div class="p3">
+      <div class="p3" id="p3">
         <div class="titulo p3">
             <h2>Horário de Atendimento</h2>
             <p>Estamos disponíveis para agendamento de consultas e visitas</p>
@@ -50,22 +70,25 @@
         </div>
       </div>
 
-      <div class="p4">
-        <div class="titulop4">
-            <h2>Feedbacks.</h2>
-            <p>Quem conhece, confia.</p>
-        </div>
+      <div class="p4" id="p4">
+        <h2>Feedbacks.</h2>
+        <p>Quem conhece, confia.</p>
+        <!-- <div class="titulop4">
+        </div> -->
         <div class="testop4">
             <ul>
                 <li><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” </br>- Cliente 1, 2026</p></li>
                 <li><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” </br>- Cliente 2, 2026</p></li>
                 <li><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” </br>- Cliente 3, 2026</p></li>
             </ul>
-            <img src="img4.png" alt="dnadnd" width="50%" height="50%" />
-        </div>
+          </div>
+            <div class="img2">
+
+              <img src="img4.png" alt="dnadnd" width="50%" height="50%" />
+            </div>
       </div>
 
-      <div class="p5">
+      <div class="p5" id="p5">
         <div class="endereco">
             <p>Visite-nos</p>
             <p>ENDEREÇO:</p>
@@ -93,37 +116,43 @@
     </main>
 
     <footer>
+      <div class="pe">
         <nav class="redes">
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>LinledIn</li>
+          <p>EMPRESA:</p>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinledIn</a></li>
             </ul>
         </nav>
         <nav class="acesso">
+          <p>ACESSO RÁPIDO:</p>
             <ul>
-                <li>Início</li>
-                <li>Nossos Serviços</li>
-                <li>Horários</li>
-                <li>Feedbacks</li>
-                <li>Contato</li>
+                <li><a href="#p1">Início</a></li>
+                <li><a href="#p2">Nossos Serviços</a></li>
+                <li><a href="#p3">Horários</a></li>
+                <li><a href="#p4">Feedbacks</a></li>
+                <li><a href="#p5">Contato</a></li>
             </ul>
         </nav>
         <nav class="servicos">
+          <p>SERVIÇOS:</p>
             <ul>
                 <li>Serviço 1</li>
                 <li>Serviço 2</li>
                 <li>Serviço 3</li>
             </ul>
         </nav>
-        <nav class="contato">
-            <ul>
+          <nav class="contato">
+            <p>CONTATO:</p>
+              <ul>
                 <li>Rua, número</li>
                 <li>Bairro</li>
                 <li>+55(01)23456-7890</li>
                 <li>email@email.com</li>
-            </ul>
-        </nav>
+              </ul>
+          </nav>
+      </div>
     </footer>
   </body>
 </html>
