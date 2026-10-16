@@ -1,3 +1,9 @@
+body {
+  font-family: "Inria Serif", serif;
+  margin: 0;
+  padding: 0;
+}
+
 .cabecalho {
   border-bottom: 1px solid #004346;
   width: 100%;
@@ -11,12 +17,6 @@
   padding: 15px 30px;
   box-sizing: border-box;
   flex-wrap: nowrap;
-}
-
-.logo {
-  font-weight: bold;
-  text-decoration: none;
-  white-space: nowrap;
 }
 
 .menu2 {
@@ -33,7 +33,136 @@
   white-space: nowrap;
 }
 
+/* Container da Seção Hero (Início) */
 .p1 {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px); /* Ocupa da base do menu até o início de #p2 */
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden; /* Corta o que passar das bordas */
+  box-sizing: border-box;
+}
+
+/* Lado Esquerdo - Textos e Botões */
+.p1-texto {
+  position: relative;
+  z-index: 5; /* Garante que o texto fique por cima de tudo */
+  width: 45%;
+  padding-left: 5%;
+  box-sizing: border-box;
+}
+
+.p1-texto h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.p1-texto h2 {
+  font-family: "Inria Serif", serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.p1-texto p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 420px;
+}
+
+/* Botões Customizados conforme o Design */
+.p1-butoes {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-agendar {
+  background-color: #004346;
+  color: #ffffff;
+  border: 2px solid #004346;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-saiba {
+  background-color: transparent;
+  color: #004346;
+  border: 1.5px solid #004346;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-agendar:hover,
+.btn-saiba:hover {
+  opacity: 0.85;
+}
+
+/* Lado Direito - Imagem de Fundo + Curvas Overlay */
+.p1-imagem-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%; /* Ocupa do meio para a direita */
+  height: 100%;
+}
+
+/* Foto principal cortada no fundo */
+.img-principal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Estilização Geral das Curvas Sobrepostas */
+.curva {
+  position: absolute;
+  top: 0;
+  left: -1px; /* Evita frestas brancas */
+  height: 100%;
+  pointer-events: none;
+}
+
+.curva-tras {
+  z-index: 2;
+  width: auto;
+  opacity: 0.3;
+}
+
+/* Responsividade fluida em telas pequenas */
+@media (max-width: 900px) {
+  .p1 {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .p1-texto {
+    width: 100%;
+    padding: 40px 5%;
+  }
+
+  .p1-imagem-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+}
+/* .p1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +194,7 @@
   max-height: 500px;
   width: auto;
   object-fit: cover;
-}
+} */
 
 .p2 {
   background-color: #004346;
@@ -77,24 +206,44 @@
   justify-content: space-between;
   align-items: stretch;
   gap: 15px;
-  background-color: #004346;
   color: #ffffff;
 }
 
 .pe {
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
   gap: 15px;
-  background-color: #004346;
+  padding: 0 20px;
   color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.pe .bolinha {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+footer {
+  background-color: #004346;
+  padding: 40px 20px;
+}
+.cabecalho a {
   color: #000000;
 }
 
 button {
   background-color: #ffffff;
+}
+
+.bolinha {
+  list-style-type: none;
+}
+
+.bolinha a {
+  color: #ffffff;
 }

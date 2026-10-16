@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page Psicólogos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -25,30 +29,26 @@
 
     <main>
       <div class="p1" id="p1">
-  <!-- Lado Esquerdo: Conteúdo de Texto -->
-  <div class="p1-texto">
-    <h4>Consultório de psicologia e psicoterapia</h4>
-    <h2>Lorem Ipsum.</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-    <div class="p1-butoes">
-      <button class="btn-agendar">AGENDAR</button>
-      <button class="btn-saiba">SAIBA MAIS</button>
-    </div>
-  </div>
+        <div class="p1-texto">
+          <h4>Consultório de psicologia e psicoterapia</h4>
+          <h2>Lorem Ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="p1-butoes">
+            <button class="btn-agendar"> <img src="img/Circlebranco.png" height="20px" width="22px"> AGENDAR</button>
+            <button class="btn-saiba"> <img src="img/Circleverde.png" height="20px" width="22px"> SAIBA MAIS</button>
+          </div>
+        </div>
 
-  <!-- Lado Direito: Container da Imagem com as Curvas -->
-  <div class="p1-imagem-container">
-    <!-- Imagem de fundo principal (Mulher no consultório) -->
-    <img src="img3.png" alt="Psicóloga em atendimento" class="img-principal" />
-    
-    <!-- Camadas das curvas (SVG ou PNG transparente) -->
-    <img src="curva-tras.png" alt="" class="curva curva-tras" />
-    <img src="curva-frente.png" alt="" class="curva curva-frente" />
-  </div>
-</div>
+        <div class="p1-imagem-container">
+          <img src="img/img3.png" alt="Psicóloga em atendimento" class="img-principal" />
+          
+          <img src="img/curva.png" alt="" class="curva curva-tras" />
+          <img src="img/curva.png" alt="" class="curva curva-tras" />
+        </div>
+      </div>
 
       <div class="p2" id="p2">
         <div class="titulop2">
@@ -84,7 +84,7 @@
           </div>
             <div class="img2">
 
-              <img src="img4.png" alt="dnadnd" width="50%" height="50%" />
+              <img src="img/img4.png" alt="dnadnd" width="50%" height="50%" />
             </div>
       </div>
 
@@ -118,16 +118,16 @@
     <footer>
       <div class="pe">
         <nav class="redes">
-          <p>EMPRESA:</p>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinledIn</a></li>
+          <ul class="bolinha">
+            <p>EMPRESA:</p>
+            <li> <img src="img/Facebook.png" height="20px" width="22px"> <a href="#">Facebook</a></li>
+            <li> <img src="img/Instagram.png" height="20px" width="22px"> <a href="#">Instagram</a></li>
+            <li> <img src="img/LinkedIn.png" height="20px" width="22px"> <a href="#">LinledIn</a></li>
             </ul>
         </nav>
         <nav class="acesso">
-          <p>ACESSO RÁPIDO:</p>
-            <ul>
+          <ul class="bolinha">
+              <p>ACESSO RÁPIDO:</p>
                 <li><a href="#p1">Início</a></li>
                 <li><a href="#p2">Nossos Serviços</a></li>
                 <li><a href="#p3">Horários</a></li>
@@ -136,16 +136,16 @@
             </ul>
         </nav>
         <nav class="servicos">
-          <p>SERVIÇOS:</p>
-            <ul>
+          <ul class="bolinha">
+              <p>SERVIÇOS:</p>
                 <li>Serviço 1</li>
                 <li>Serviço 2</li>
                 <li>Serviço 3</li>
             </ul>
         </nav>
           <nav class="contato">
-            <p>CONTATO:</p>
-              <ul>
+            <ul class="bolinha">
+                <p>CONTATO:</p>
                 <li>Rua, número</li>
                 <li>Bairro</li>
                 <li>+55(01)23456-7890</li>
