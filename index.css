@@ -126,7 +126,7 @@ a {
 .btn-saiba {
   background-color: transparent;
   color: #004346;
-  border: 1.5px solid #004346;
+  border: 2px solid #004346;
 }
 .p1-img-container {
   position: relative;
@@ -576,4 +576,44 @@ footer {
   .pe nav {
     flex: 1 1 100%;
   }
+}
+
+/* Requisito: botões e links devem ter estado de hover e focus visíveis */
+a {
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+.menu2 a:hover,
+.logo:hover {
+  color: #016f73;
+}
+.pe a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+.btn-agendar:hover {
+  background-color: #012a2c;
+  border-color: #012a2c;
+  transform: translateY(-2px);
+}
+.btn-saiba:hover,
+.btn-enviar:hover {
+  background-color: #004346;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+.btn-agendar:active,
+.btn-saiba:active,
+.btn-enviar:active {
+  transform: translateY(0);
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px dashed #004346;
+  outline-offset: 4px;
+}
+.pe a:focus-visible {
+  outline-color: #ffffff;
 }
